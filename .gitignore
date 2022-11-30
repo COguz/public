@@ -1,0 +1,25 @@
+# ignore everything but .gitignore
+/*
+!/.gitignore
+
+# qtile configuration files
+!/.config
+/.config/*
+!/.config/qtile
+/.config/qtile/__pycache__
+
+# lybrary in documents
+!/Documents
+/Documents/*
+!/Documents/lybrary/
+
+# newsboat configuration
+!/.newsboat
+/.newsboat/*
+!/.newsboat/config
+
+# scripts
+!/Scripts/
+
+# xinitrc
+!/.xinitrc
