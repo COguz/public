@@ -1,0 +1,14 @@
+# Swap j and k with J and K
+unbind-key	j
+unbind-key	J
+unbind-key	k
+unbind-key	K
+bind-key	j	next
+bind-key	J	next-feed
+bind-key	k	prev
+bind-key	K	prev-feed
+
+# Sync faster
+reload-threads 20
+
+browser         "firefox --private-window"

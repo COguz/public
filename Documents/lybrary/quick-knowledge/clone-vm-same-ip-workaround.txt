@@ -1,0 +1,13 @@
+Cloned VM acquires the same DHCP IP address 
+
+the newly cloned VM includes the same /etc/machine-id as the VM template
+
+For Linux OS which uses /etc/netplan with default network renderer as systemd-networkd, such as Ubuntu Server 18.04, Ubuntu 19.10 and Ubuntu 20.04, the value of /etc/machine-id is used as a unique identifier when the DHCP server assigns an IP address for the Operating System. If two or more these guest OSes include the same /etc/machine-id, then they get the same IP addresses from the DHCP server.
+
+To work around this issue, prepare a VM template running an Ubuntu Guest OS with an empty /etc/machine-id.
+
+Power on the template VM and run these commands inside VM:
+    echo -n > /etc/machine-id
+    rm /var/lib/dbus/machine-id
+    ln -s /etc/machine-id /var/lib/dbus/machine-id
+    poweroff VM and it is ready as template

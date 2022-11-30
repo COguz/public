@@ -1,0 +1,20 @@
+Clean device
+ dd if=/dev/urandom of=/dev/sda1 status=progress
+Encrypt device
+ cryptsetup luksFormat /dev/sda1
+Open encrypted device
+ cryptsetup luksOpen /dev/sda1 mydevice
+# device ready as any other unencrypted device as mydevice in /dev/mapper/mydevice
+Create filesystem
+ mkfs.ext4 /dev/mapper/mydevice
+Get /dev/sda1's uuid for /etc/crypttab as DEVUUID
+ blkid /dev/sda1
+Get mydevice's uuid for /etc/fstab as FSUUID
+ blkid /dev/mapper/mydevice
+Open encrypted device when booting
+ echo "mydevice UUID=DEVUUID [keyfileLocation/none] [options]" >> /etc/crypttab
+# you can change mydevice to what you want to your disk named
+ echo UUID=FSUUID /mnt/crypt ext4 defaults 0 0 >> /etc/fstab
+Close opened device 
+ crypttsetup close mydevice
+Reboot to check
