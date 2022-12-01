@@ -58,7 +58,7 @@ mate-power-manager &
 #mate-volume-control-status-icon &
 nm-applet &
 
-bash ~/Scripts/xinput.sh
+bash ~/Scripts/xinput.sh &
 
 #picom &
 

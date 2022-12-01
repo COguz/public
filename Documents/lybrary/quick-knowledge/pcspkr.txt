@@ -1,0 +1,2 @@
+kernel command line
+modprobe.blacklist=pcspkr

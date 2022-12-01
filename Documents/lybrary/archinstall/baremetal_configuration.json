@@ -141,7 +141,7 @@
         "qemu-desktop",
         "slock",
         "firefox",
-        "feh",
+        "ncdu",
         "tmux",
         "bashtop",
         "edk2-ovmf",
@@ -157,6 +157,7 @@
 	"youtube-dl",
 	"yt-dlp",
 	"newsboat",
+	"xorg-xinput",
 	"marked"
 
     ],
