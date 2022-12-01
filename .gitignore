@@ -23,3 +23,6 @@
 
 # xinitrc
 !/.xinitrc
+
+# bashrc
+!/.bashrc
