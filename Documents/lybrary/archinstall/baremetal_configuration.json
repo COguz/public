@@ -158,6 +158,12 @@
 	"yt-dlp",
 	"newsboat",
 	"xorg-xinput",
+	"libreoffice-still",
+	"bluez",
+	"bluez-utils",
+	"blueman",
+	"pulseaudio-bluetooth",
+	"meld",
 	"marked"
 
     ],

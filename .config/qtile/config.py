@@ -84,8 +84,8 @@ keys = [
     Key([], "XF86AudioLowerVolume", lazy.spawn('pamixer -d 5')),
 ]
 
-groups = [Group(i) for i in "1234567890"]
-#groups = [Group(i) for i in "12345"]
+#groups = [Group(i) for i in "1234567890"]
+groups = [Group(i) for i in "12345"]
 
 
 for i in groups:

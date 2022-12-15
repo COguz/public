@@ -57,6 +57,7 @@ bash ~/Scripts/random_wallpaper.sh &
 mate-power-manager &
 #mate-volume-control-status-icon &
 nm-applet &
+blueman-applet &
 
 bash ~/Scripts/xinput.sh &
 
