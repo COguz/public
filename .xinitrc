@@ -52,7 +52,7 @@ fi
 #xrandr -s 1920x1080
 
 #xwallpaper --zoom .wallpapers/wallpaper.png
-#bash ~/Scripts/random_wallpaper.sh &
+bash ~/Scripts/random_wallpaper.sh &
 
 mate-power-manager &
 #mate-volume-control-status-icon &

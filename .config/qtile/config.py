@@ -145,8 +145,8 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.CurrentLayout(),
                 widget.GroupBox(highlight_method='block'),
+                widget.CurrentLayout(),
                 widget.Prompt(),
                 widget.WindowCount(),
                 widget.TaskList(max_title_width=250),
