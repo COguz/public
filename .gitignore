@@ -29,6 +29,7 @@
 
 # bashrc
 !/.bashrc
+!/.bashrc.d
 
 # bash alias
 !/.bash_aliases

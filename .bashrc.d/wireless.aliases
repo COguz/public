@@ -1,0 +1,2 @@
+alias wifion="nmcli rad wifi on"
+alias wifioff="nmcli rad all off"
