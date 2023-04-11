@@ -2,12 +2,6 @@
 /*
 !/.gitignore
 
-# qtile configuration files
-!/.config
-/.config/*
-!/.config/qtile
-/.config/qtile/__pycache__
-
 # lybrary in documents
 !/Documents
 /Documents/*
@@ -18,18 +12,6 @@
 /.newsboat/*
 !/.newsboat/config
 
-# scripts
-!/Scripts/
-
-# xinitrc
-!/.xinitrc
-
-# Xresources
-!/.Xresources
-
 # bashrc
 !/.bashrc
 !/.bashrc.d
-
-# bash alias
-!/.bash_aliases
